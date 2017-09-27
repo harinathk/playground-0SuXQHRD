@@ -34,7 +34,7 @@ The same thing we can write using Java 5's Arrays.asList() like below:
 // { autofold
 import java.util.Collections;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Arrays;
 public class Main {
 
 public static void main(String[] args) {
