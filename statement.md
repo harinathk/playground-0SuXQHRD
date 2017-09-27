@@ -77,7 +77,7 @@ By using Java 8 Streams:
 ```java runnable
 // { autofold
 import java.util.Collections;
-import java.util.Stream;
+import java.util.stream.Stream;
 public class Main {
 
 public static void main(String[] args) {
@@ -143,7 +143,7 @@ public static void main(String[] args) {
     Set<String> set1 = Set.of("One"); // Set1
     Set<String> set2 = Set.of("One", "Two"); // Set2
     Set<String> set3 = Set.of("One", "Two", "Three"); // Set3
-    Set<String> set4 = Set.of("One", "Two", "Three" "Four"); // SetN
+    Set<String> set4 = Set.of("One", "Two", "Three", "Four"); // SetN
     
     System.out.println(set0);
     System.out.println(set1);
