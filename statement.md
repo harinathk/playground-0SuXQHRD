@@ -84,7 +84,7 @@ public static void main(String[] args) {
 // }
    Stream.of("One", "Two", "Three", "Four")
           .collect(collectingAndThen(toSet(), Collections::unmodifiableSet));
-	System.out.println(units);
+	//System.out.println(units);
 //{ autofold
 }
 
@@ -95,11 +95,11 @@ The Java 8 version, though, is a one-line expression. This method can’t be use
 
 Creating such a small immutable Collection in Java using the above approach is very verbose.
 
-#Collection Factories
+# Collection Factories
 
 By using Java 9 Collection factories, we can create immutable collections.
 
-#List and Set
+# List and Set
 
 For example, if we want to create lists, we can do this:
 
@@ -166,7 +166,7 @@ As you can see, it’s very simple, short, and concise.
 
 In the example, we have used the method that takes one to four elements as parameters and returns a List /Set of size 4. But there are 12 overloaded versions of this method and 11 with 0-10 parameters and one with var-args so that there is no fixed limit on the collection size.
 
-#Map
+# Map
 
 The signature of a Map factory method is:
 static <K,V> Map<K,V> of(K k1, V v1, K k2, V v2, K k3, V v3)
@@ -187,7 +187,7 @@ Map<String, String> map = Map.ofEntries(
   new AbstractMap.SimpleEntry<>("Two", "2"),
   new AbstractMap.SimpleEntry<>("Three", "3"));
   
-#Characteristics
+# Characteristics
 
 The collections created using the factory methods are not the most commonly used implementations. These implementations are internal and their constructors are not made public.
 
@@ -201,7 +201,7 @@ Serialization:  They are serializable if all elements are serializable.
 
 Iteration Order: The iteration order of elements is unspecified and is subject to change.
 
-#Conclusion
+# Conclusion
 
 Collection factories add some easier syntax to perform a common operation. They give us most of the benefits without any language changes. The addition of these factory methods in Java 9 provides Immutable collections.  
 
