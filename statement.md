@@ -10,6 +10,8 @@ Let’s start by looking at the problem that this is trying to solve by instanti
 
 ```java runnable
 // { autofold
+import java.util.List;
+import java.util.ArrayList;
 public class Main {
 
 public static void main(String[] args) {
