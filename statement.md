@@ -6,8 +6,6 @@ In this article, we will discuss their usage and implementation details.
 
 Let’s start by looking at the problem that this is trying to solve by instantiation a list with a few String values:
 
-
-
 ```java runnable
 // { autofold
 import java.util.Collections;
@@ -30,7 +28,26 @@ public static void main(String[] args) {
 }
 //}
 ```
+The same thing we can write using Java 5's Arrays.asList() like below:
 
+```java runnable
+// { autofold
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
+public class Main {
+
+public static void main(String[] args) {
+// }
+    List<String> units= Arrays.asList("One", "Two", "Three", "Four");
+    units = Collections.unmodifiableList(units);
+	System.out.println(units);
+//{ autofold
+}
+
+}
+//}
+```
 # Advanced usage
 
 If you want a more complex example (external libraries, viewers...), use the [Advanced Java template](https://tech.io/select-repo/385)
